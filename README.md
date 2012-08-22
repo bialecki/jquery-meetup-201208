@@ -60,7 +60,7 @@ JavaScript:
 
     $('.timestamp').autoUpdate();
 
-### An entire page via Backbone
+### A Backbone View (could represent a part of the page or the whole thing)
 
 You can also take this idea up to larger components (even pages) and tie it directly into a framework like Backbone. There's a complete example at [http://jsfiddle.net/7yfAu/](http://jsfiddle.net/7yfAu/).
 
