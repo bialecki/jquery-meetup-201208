@@ -87,11 +87,13 @@ JavaScript:
     var ChartView = BaseView.extend({
       
       loaded: function (data) {
-        this.model.set({
-          'importantDetail' : data.importantDetail
-        });
+        this.model.set(data);
 
-        this.fetchData(data.dataUrl);
+        this.render();
+      },
+
+      render: function () {
+        this.$el.html(this.model.get('plotData'));
       }
 
     });
